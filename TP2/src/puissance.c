@@ -7,7 +7,7 @@ int main(void)
   int i;
   float puiss = 1; 
 
-  for (i = 1, i <= b, i++)
+  for (i = 1; i <= b; i++)
     {
       puiss = puiss * a
     }
@@ -16,3 +16,4 @@ int main(void)
 
   return 0;
 }
+
