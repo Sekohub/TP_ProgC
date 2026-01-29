@@ -9,6 +9,7 @@ int main(void)
     int un;
 
     printf("Entrez la valeur de n : ");
+    fflush(stdout);              /* FORCE l'affichage */
     scanf("%d", &n);
 
     if (n < 0)
@@ -17,14 +18,15 @@ int main(void)
         return 1;
     }
 
-    /* Affichage des premiers termes */
+    printf("Suite de Fibonacci : ");
+    fflush(stdout);
+
     if (n >= 0)
         printf("%d", u0);
 
     if (n >= 1)
         printf(", %d", u1);
 
-    /* Calcul et affichage des termes suivants */
     for (i = 2; i <= n; i++)
     {
         un = u0 + u1;
@@ -34,6 +36,7 @@ int main(void)
     }
 
     printf("\n");
+    fflush(stdout);
 
     return 0;
 }
