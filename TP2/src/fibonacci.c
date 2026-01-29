@@ -2,30 +2,11 @@
 
 int main(void)
 {
-    int n;
+    int n = 7;
+    int u0 = 0, u1 = 1, un;
     int i;
-    int u0 = 0;
-    int u1 = 1;
-    int un;
 
-    printf("Entrez la valeur de n : ");
-    fflush(stdout);              /* FORCE l'affichage */
-    scanf("%d", &n);
-
-    if (n < 0)
-    {
-        printf("n doit etre positif.\n");
-        return 1;
-    }
-
-    printf("Suite de Fibonacci : ");
-    fflush(stdout);
-
-    if (n >= 0)
-        printf("%d", u0);
-
-    if (n >= 1)
-        printf(", %d", u1);
+    printf("%d, %d", u0, u1);
 
     for (i = 2; i <= n; i++)
     {
@@ -36,7 +17,5 @@ int main(void)
     }
 
     printf("\n");
-    fflush(stdout);
-
     return 0;
 }
