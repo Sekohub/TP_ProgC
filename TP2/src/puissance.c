@@ -9,12 +9,13 @@ int main(void)
 
   for (i = 1; i <= b; i++)
     {
-      puiss = puiss * a
+      puiss = puiss * a;
     }
 
   printf("%d à la puissance %d = %f\n", a, b, puiss);
 
   return 0;
 }
+
 
 
