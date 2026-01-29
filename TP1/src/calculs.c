@@ -1,20 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(void)
 {
     int num1, num2;
     char op;
 
-    /* Saisie des valeurs */
     printf("Entrez le premier nombre entier : ");
+    fflush(stdout);
     scanf("%d", &num1);
 
     printf("Entrez le second nombre entier : ");
+    fflush(stdout);
     scanf("%d", &num2);
 
     printf("Entrez l'operateur (+, -, *, /, %%, &, |, ~) : ");
-    scanf(" %c", &op);  /* espace avant %c pour ignorer les retours ligne */
+    fflush(stdout);
+    scanf(" %c", &op);   /* espace AVANT %c = très important */
+
+    printf("\nOperateur lu : %c\n", op);  /* DEBUG visuel */
 
     switch (op)
     {
@@ -57,7 +60,7 @@ int main(void)
             break;
 
         default:
-            printf("Operateur non reconnu\n");
+            printf("Operateur non reconnu : '%c'\n", op);
     }
 
     return 0;
