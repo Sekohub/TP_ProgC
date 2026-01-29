@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 
-int main(void)
+int main()
 {
     int a = 16;
     int b = 3;
@@ -20,6 +20,7 @@ int main(void)
 
     return 0;
 }
+
 
 
 
