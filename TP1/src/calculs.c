@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int main(void)
 {
-  int num1;
-  int num2;
+  int num1, num2;
   char op;
 
   printf("Entrez le premier nombre entier : ");
@@ -62,5 +61,6 @@ switch (op)
 
     return 0;
 }
+
 
 
