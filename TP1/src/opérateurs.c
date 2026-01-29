@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 int main()
 {
     int a = 16;
@@ -20,6 +19,7 @@ int main()
 
     return 0;
 }
+
 
 
 
