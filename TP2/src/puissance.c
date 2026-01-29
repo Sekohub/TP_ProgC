@@ -12,8 +12,9 @@ int main(void)
       puiss = puiss * a
     }
 
-  printf("%d à la puissance %d = %d\n", a, b, puiss);
+  printf("%d à la puissance %d = %f\n", a, b, puiss);
 
   return 0;
 }
+
 
