@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int main(void)
 {
     int a = 16;
     int b = 3;
@@ -19,6 +19,7 @@ int main()
 
     return 0;
 }
+
 
 
 
